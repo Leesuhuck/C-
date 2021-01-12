@@ -63,6 +63,7 @@ int main(void) {
 * gets_s()를 이용하는 경우 범위를 넘으면 그 즉시 런타임(Runtime) 오류가 발생한다.
 */
 
+/*
 int main(void) {
 
 	char a[100];
@@ -71,4 +72,33 @@ int main(void) {
 	system("pause");
 	return 0;
 }
+*/
 
+/*
+* 문자열 처리를 위한 다양한 함수
+* strlen() : 문자열의 길이를 반환합니다.
+* strcmp() : 문자열 1이 문자열 2보다 사전적으로 앞에 있으면 -1, 뒤에 있으면 1을 반환
+* strcpy() : 문자열을 복사합니다.
+* strcat() : 문자열 1에 문자열 2를 더합니다.
+* strstr() : 문자열 1에 문자열 2가 어덯게 포함되어 있는지를 반환합니다.
+*/
+
+
+int main(void) {
+
+	char a[20] = "Dongbin Na";
+	char b[20] = "Hojoon Seok";
+	char c[20] = "My name";
+	char d[20] = "Dongbin Na";
+	char e[30] = "I like you";
+	char f[30] = "like";
+
+	printf("문자열의 길이 : %d\n", strlen(a));
+	printf("문자열의 길이 : %d\n", strlen(b));
+	printf("두 배열의 사전 순 비교: %d\n", strcmp(a, b));
+	printf("합쳐진 결과 문자열: %s\n", a);
+	printf("찾은 문자열: %s\n", strstr(e, f));
+	system("pause");
+	return 0;
+
+}
